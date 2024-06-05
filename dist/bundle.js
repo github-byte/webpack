@@ -16,6 +16,41 @@ function helloWorld() {
 
 
 
+/***/ }),
+/* 2 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   insertImage: () => (/* binding */ insertImage)
+/* harmony export */ });
+/* harmony import */ var _s4_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
+/* harmony import */ var _altText_txt__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4);
+
+
+const insertImage = () => {
+    const newNode = document.createElement("img");
+    newNode.src = _s4_png__WEBPACK_IMPORTED_MODULE_0__;
+    newNode.alt = _altText_txt__WEBPACK_IMPORTED_MODULE_1__;
+    newNode.style.width = "200px";
+    newNode.style.height = "200px";
+    document.body.appendChild(newNode);
+}
+
+
+
+/***/ }),
+/* 3 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "a0ec9f55b1e99efeb50d.png";
+
+/***/ }),
+/* 4 */
+/***/ ((module) => {
+
+module.exports = "KIWI TEST";
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -72,17 +107,22 @@ function helloWorld() {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		__webpack_require__.p = "dist/";
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helloWorld__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _insert_image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+
 
 (0,_helloWorld__WEBPACK_IMPORTED_MODULE_0__.helloWorld)();
-
-
-
+(0,_insert_image__WEBPACK_IMPORTED_MODULE_1__.insertImage)();
 })();
 
 /******/ })()
